@@ -19,7 +19,7 @@
                         <div class="col-md-4 date-time">
                             {{ partial "date.html" .Date }}
                             &centerdot;
-                            {{ partial "time-to-read.html" .}}
+                            {{ .Params.author }}
                         </div>
 
                         <div class="col-md-8 tags ">

@@ -33,7 +33,7 @@
     </div>
 </div>
 
-{{ if gt .Sections 0 }}
+{{ if and (gt .Sections 0) (.Site.Params.sectionmenu) }}
 <div class="bg-offwhite pb-5 pt-1">
     <div class="container-md">
         <h2 class="section-title">
