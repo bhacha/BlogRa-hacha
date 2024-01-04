@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<main class="blog-content">
+    <div class="container-md">
+        <div class="row">
+            <!-- <div class="col-lg-8 offset-lg-2 px-lg-4"> -->
+            <div class="col-md-12 col-lg-8 px-lg-4">
+                <h1 class="title">{{ .Title }}</h1>
+                {{ .Content }}
+            </div>
+
+            {{ partial "submission.html" }}
+
+        </div>
+    </div>
+</main>
+
+{{ end }}

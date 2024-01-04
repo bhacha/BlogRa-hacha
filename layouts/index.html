@@ -16,7 +16,6 @@
 <div class="bg-offwhite py-5">
     <div class="container-md">
         <div class="row">
-
             {{ partial "ads.html" "ads/horizontal-ad.js" }}
 
             {{/* $filteredPosts := where (where .Site.Pages "Type" "blog") "UniqueID" "!= ".UniqueID }}
@@ -29,8 +28,13 @@
             {{ range $latestPosts }}
             {{ partial "suggestion.html" . }}
             {{ end }}
-        </div>
+        </div>   
     </div>
+</div>
+<div class="bg-offwhite submit-link">
+    <h2>
+    <a href={{ "/submit/" | relURL }}> Have an idea? Submit it here! </a>
+    </h2>
 </div>
 
 {{ if and (gt .Sections 0) (.Site.Params.sectionmenu) }}
@@ -58,6 +62,7 @@
 
         {{ partial "ads.html" "ads/horizontal-ad.js" }}
         {{ partial "submission.html" }}
+
     </div>
 </div>
 {{ end }}
